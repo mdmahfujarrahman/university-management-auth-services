@@ -13,7 +13,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
-  "author": "mahfuj ahmed",
+  "author": "Mahfuj Ahmed",
   "license": "ISC",
   "lint-staged": {
     "src/**/*.ts": "yarn lint-prettier"
