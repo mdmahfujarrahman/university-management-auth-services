@@ -4,8 +4,10 @@ import cors from 'cors'
 // routes
 import usersRouter from './app/modules/users/user.route'
 
+// app
 const app: Application = express()
 
+// cors
 app.use(cors())
 
 // perser
