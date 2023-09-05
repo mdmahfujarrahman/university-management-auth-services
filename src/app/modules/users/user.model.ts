@@ -15,4 +15,10 @@ const userSchema = new Schema<IUser>(
   { timestamps: true }
 )
 
+// userSchema.pre('save', async function (next: NextFunction) {
+//   if (!this.isModified('password')) return next()
+//   this.password = await bcrypt.hash(this.password, 12)
+//   next()
+// })
+
 export const User = model<IUser, UserModel>('User', userSchema)
