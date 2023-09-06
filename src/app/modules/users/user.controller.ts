@@ -1,30 +1,24 @@
-// Purpose: User controller for user module
-
 // Types
-import { Request, Response } from 'express'
+import { RequestHandler } from 'express-serve-static-core';
 
 // Services
-import userServices from './user.services'
+import { UserService } from './user.services';
 
-const createUser = async (req: Request, res: Response) => {
+const createUser: RequestHandler = async (req, res, next) => {
   try {
-    const { user } = req.body
-
-    const result = await userServices.createUser(user)
+    const { user } = req.body;
+    const result = await UserService.createUser(user);
 
     res.status(200).json({
       sucess: true,
       message: 'User created successfully',
       data: result,
-    })
+    });
   } catch (error) {
-    res.status(401).json({
-      sucess: false,
-      message: 'Fail to create new user',
-    })
+    next(error);
   }
-}
+};
 
-export default {
+export const UserController = {
   createUser,
-}
+};

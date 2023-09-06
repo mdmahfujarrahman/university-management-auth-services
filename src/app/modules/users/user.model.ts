@@ -1,10 +1,7 @@
-import { Schema, model, Model } from 'mongoose'
+import { Schema, model } from 'mongoose';
 
 // types
-import { IUser } from './user.interface'
-
-// type UserModel = Model<IUser>
-type UserModel = Model<IUser, object>
+import { IUser, UserModel } from './user.interface';
 
 const userSchema = new Schema<IUser>(
   {
@@ -13,12 +10,6 @@ const userSchema = new Schema<IUser>(
     role: { type: String, required: true },
   },
   { timestamps: true }
-)
+);
 
-// userSchema.pre('save', async function (next: NextFunction) {
-//   if (!this.isModified('password')) return next()
-//   this.password = await bcrypt.hash(this.password, 12)
-//   next()
-// })
-
-export const User = model<IUser, UserModel>('User', userSchema)
+export const User = model<IUser, UserModel>('User', userSchema);
