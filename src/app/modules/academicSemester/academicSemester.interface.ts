@@ -1,4 +1,4 @@
-import { Model } from 'mongoose';
+import { Model, SortOrder } from 'mongoose';
 
 export type IAcademicSemesterMonth =
   | 'January'
@@ -18,10 +18,17 @@ export type IAcademicSemesterCode = '01' | '02' | '03';
 
 export type IAcademicSemester = {
   title: IAcademicSemesterTitle;
-  year: number;
+  year: string;
   code: IAcademicSemesterCode;
   startMonth: IAcademicSemesterMonth;
   endMonth: IAcademicSemesterMonth;
 };
 
 export type AcademicSemesterModel = Model<IAcademicSemester>;
+
+export type IPaginationOptions = {
+  page?: number;
+  limit?: number;
+  sortBy?: string;
+  sortOrder?: SortOrder;
+};
