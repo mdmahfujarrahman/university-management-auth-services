@@ -5,6 +5,7 @@ import cors from 'cors';
 import globalErrorHandler from './app/middleware/globalErrorHandler';
 import routes from './app/routes';
 import httpStatus from 'http-status';
+import { generateAdminId } from './app/modules/users/user.utils';
 
 // app
 const app: Application = express();
@@ -40,5 +41,17 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   });
   next();
 });
+
+// const testD = {
+//   code: '01',
+//   year: '2025',
+// };
+
+const testing = async () => {
+  const testID = await generateAdminId();
+  console.log(testID);
+};
+
+testing();
 
 export default app;

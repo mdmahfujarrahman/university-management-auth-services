@@ -7,10 +7,12 @@ import { IUser } from './user.interface';
 // Utils
 import { generateUserId } from './user.utils';
 import ApiError from '../../../errors/ApiErrors';
+import { ENUM_USER_ROLES } from '../../../enums/users';
 
 const createUser = async (user: IUser): Promise<IUser | null> => {
   console.log(user);
   const id = await generateUserId();
+  console.log(id);
   user.id = id;
   if (!user.password) {
     user.password = config.default_user_password as string;
@@ -23,8 +25,33 @@ const createUser = async (user: IUser): Promise<IUser | null> => {
   return createdUser;
 };
 
-const getLastUser = async () => {
-  const lastUser = await User.findOne({}, { id: 1, _id: 0 })
+const getLastStudentUser = async () => {
+  const lastUser = await User.findOne(
+    { role: ENUM_USER_ROLES.STUDENT },
+    { id: 1, _id: 0 }
+  )
+    .sort({
+      createdAt: -1,
+    })
+    .lean();
+  return lastUser?.id;
+};
+const getLastAdminUser = async () => {
+  const lastUser = await User.findOne(
+    { role: ENUM_USER_ROLES.ADMIN },
+    { id: 1, _id: 0 }
+  )
+    .sort({
+      createdAt: -1,
+    })
+    .lean();
+  return lastUser?.id;
+};
+const getLastFacultyUser = async () => {
+  const lastUser = await User.findOne(
+    { role: ENUM_USER_ROLES.FACULTY },
+    { id: 1, _id: 0 }
+  )
     .sort({
       createdAt: -1,
     })
@@ -34,5 +61,7 @@ const getLastUser = async () => {
 
 export const UserService = {
   createUser,
-  getLastUser,
+  getLastStudentUser,
+  getLastAdminUser,
+  getLastFacultyUser,
 };
