@@ -1,0 +1,135 @@
+Wed Sep 06 2023 10:4:2 am  [UM] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Role is required"
+  }
+]
+Wed Sep 06 2023 10:4:25 am  [UM] error: ❌ Failed to connect to Database querySrv ECONNREFUSED _mongodb._tcp.cluster0.2nhyc.mongodb.net
+Wed Sep 06 2023 10:4:34 am  [UM] error: ❌ Failed to connect to Database querySrv ECONNREFUSED _mongodb._tcp.cluster0.2nhyc.mongodb.net
+Wed Sep 06 2023 10:4:43 am  [UM] error: ❌ Failed to connect to Database querySrv ECONNREFUSED _mongodb._tcp.cluster0.2nhyc.mongodb.net
+Wed Sep 06 2023 10:6:51 am  [UM] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Role is required"
+  }
+]
+Wed Sep 06 2023 10:7:59 am  [UM] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Role is required"
+  }
+]
+Wed Sep 06 2023 10:8:16 am  [UM] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Role is required"
+  }
+]
+Wed Sep 06 2023 10:8:51 am  [UM] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Role is required"
+  }
+]
+Wed Sep 06 2023 10:9:12 am  [UM] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Role is required"
+  }
+]
+Wed Sep 06 2023 10:14:7 am  [UM] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Role is required"
+  }
+]
+Wed Sep 06 2023 10:26:5 am  [UM] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Role is required"
+  }
+]
+Wed Sep 06 2023 10:27:10 am  [UM] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Role is required"
+  }
+]
+Wed Sep 06 2023 10:29:51 am  [UM] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Role is required"
+  }
+]
+Wed Sep 06 2023 10:40:32 am  [UM] error: 🐱‍🏍 globalErrorHandler ~~ [
+  {
+    "code": "invalid_type",
+    "expected": "string",
+    "received": "undefined",
+    "path": [
+      "body",
+      "role"
+    ],
+    "message": "Role is required"
+  }
+]

@@ -1,17 +1,57 @@
+import express, { Application, Request, Response, NextFunction } from 'express';
+import cors from 'cors';
 
-import express, { Application, Request, Response } from 'express'
-import cors from 'cors'
-const app: Application = express()
+// middleware
+import globalErrorHandler from './app/middleware/globalErrorHandler';
+import routes from './app/routes';
+import httpStatus from 'http-status';
+import { generateAdminId } from './app/modules/users/user.utils';
 
+// app
+const app: Application = express();
 
-app.use(cors())
+// cors
+app.use(cors());
 
 // perser
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-app.get('/', (req: Request, res: Response) => {
-    res.send('Hello World!')
-})
+// Routes
+app.use('/api/v1', routes);
 
-export default app
+// app.get('/', async (req: Request, res: Response, next: NextFunction) => {
+//   throw new Error('Testing Error logger')
+// })
+
+// Error Handler
+app.use(globalErrorHandler);
+
+// handle not found
+app.use((req: Request, res: Response, next: NextFunction) => {
+  res.status(httpStatus.NOT_FOUND).json({
+    success: false,
+    message: 'Not Found',
+    errorMessages: [
+      {
+        path: req.originalUrl,
+        message: 'Api Not Found',
+      },
+    ],
+  });
+  next();
+});
+
+// const testD = {
+//   code: '01',
+//   year: '2025',
+// };
+
+const testing = async () => {
+  const testID = await generateAdminId();
+  console.log(testID);
+};
+
+testing();
+
+export default app;
