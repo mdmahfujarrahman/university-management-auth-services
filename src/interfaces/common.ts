@@ -38,3 +38,14 @@ export type IPeginationReturnOptions = {
 export type IFilters = {
   searchTerm?: string;
 };
+
+export type IGender = 'Male' | 'Female' | 'Other';
+export type IBloodGroup =
+  | 'A+'
+  | 'A-'
+  | 'B+'
+  | 'B-'
+  | 'AB+'
+  | 'AB-'
+  | 'O+'
+  | 'O-';

@@ -5,28 +5,88 @@ import { User } from './user.model';
 // Interfaces
 import { IUser } from './user.interface';
 // Utils
-import { generateUserId } from './user.utils';
 import ApiError from '../../../errors/ApiErrors';
 import { ENUM_USER_ROLES } from '../../../enums/users';
+import { generateStudentId } from './user.utils';
+import { IStudent } from '../student/student.interface';
+import { AcademicSemester } from '../academicSemester/academicSemester.model';
+import mongoose from 'mongoose';
+import { Student } from '../student/student.model';
+import httpStatus from 'http-status';
+import { studentPopulateFields } from '../student/student.constant';
 
-const createUser = async (user: IUser): Promise<IUser | null> => {
-  console.log(user);
-  const id = await generateUserId();
-  console.log(id);
-  user.id = id;
+const createStudent = async (
+  student: IStudent,
+  user: IUser
+): Promise<IUser | null> => {
   if (!user.password) {
-    user.password = config.default_user_password as string;
+    user.password = config.default_student_password as string;
   }
-  const createdUser = await User.create(user);
+  // set role
+  user.role = ENUM_USER_ROLES.STUDENT;
+  // get academic semester
+  const academicSemester = await AcademicSemester.findById(
+    student.academicSemester
+  );
+  let newUserData = null;
+  const session = await mongoose.startSession();
+  try {
+    session.startTransaction();
+    const id = await generateStudentId(academicSemester);
+    user.id = id;
+    student.id = id;
+    // create student
+    const newStudent = await Student.create([student], { session });
+    if (!newStudent.length) {
+      throw new ApiError(httpStatus.BAD_REQUEST, 'Failed to create student');
+    }
+    user.student = newStudent[0]._id;
+    const newUser = await User.create([user], { session });
+    if (!newUser.length) {
+      throw new ApiError(httpStatus.BAD_REQUEST, 'Failed to create user');
+    }
 
-  if (!createdUser) {
-    throw new ApiError(400, 'Failed to create user');
+    newUserData = newUser[0];
+
+    await session.commitTransaction();
+    await session.endSession();
+  } catch (error) {
+    await session.abortTransaction();
+    await session.endSession();
+    throw error;
   }
-  return createdUser;
+
+  // if (newUserData) {
+  //   newUserData = await User.findOne({ id: newUserData.id }).populate({
+  //     path: 'student',
+  //     populate: [
+  //       {
+  //         path: 'academicSemester',
+  //         model: 'AcademicSemester',
+  //       },
+  //       {
+  //         path: 'academicDepartment',
+  //         model: 'AcademicDepartment',
+  //       },
+  //       {
+  //         path: 'academicFaculty',
+  //         model: 'AcademicFaculty',
+  //       },
+  //     ],
+  //   });
+  // }
+  if (newUserData) {
+    newUserData = await User.findOne({ id: newUserData.id }).populate({
+      path: 'student',
+      populate: studentPopulateFields,
+    });
+  }
+
+  return newUserData;
 };
 
-const getLastStudentUser = async () => {
-  const lastUser = await User.findOne(
+const getLastStudentUser = async (): Promise<string | undefined> => {
+  const lastStudent = await User.findOne(
     { role: ENUM_USER_ROLES.STUDENT },
     { id: 1, _id: 0 }
   )
@@ -34,10 +94,10 @@ const getLastStudentUser = async () => {
       createdAt: -1,
     })
     .lean();
-  return lastUser?.id;
+  return lastStudent?.id ? lastStudent?.id.substring(4) : undefined;
 };
-const getLastAdminUser = async () => {
-  const lastUser = await User.findOne(
+const getLastAdminUser = async (): Promise<string | undefined> => {
+  const adminUser = await User.findOne(
     { role: ENUM_USER_ROLES.ADMIN },
     { id: 1, _id: 0 }
   )
@@ -45,10 +105,10 @@ const getLastAdminUser = async () => {
       createdAt: -1,
     })
     .lean();
-  return lastUser?.id;
+  return adminUser?.id ? adminUser?.id.substring(2) : undefined;
 };
-const getLastFacultyUser = async () => {
-  const lastUser = await User.findOne(
+const getLastFacultyUser = async (): Promise<string | undefined> => {
+  const facultyUser = await User.findOne(
     { role: ENUM_USER_ROLES.FACULTY },
     { id: 1, _id: 0 }
   )
@@ -56,11 +116,11 @@ const getLastFacultyUser = async () => {
       createdAt: -1,
     })
     .lean();
-  return lastUser?.id;
+  return facultyUser?.id ? facultyUser?.id.substring(2) : undefined;
 };
 
 export const UserService = {
-  createUser,
+  createStudent,
   getLastStudentUser,
   getLastAdminUser,
   getLastFacultyUser,
