@@ -12,7 +12,18 @@ const createStudent = catchAsync(async (req: Request, res: Response) => {
   const result = await UserService.createStudent(student, userData);
   sendResponse(res, {
     statusCode: httpStatus.OK,
-    message: 'User created successfully',
+    message: 'Student created successfully',
+    success: true,
+    data: result,
+  });
+});
+
+const createFaculty = catchAsync(async (req: Request, res: Response) => {
+  const { faculty, ...userData } = req.body;
+  const result = await UserService.createFaculty(faculty, userData);
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    message: 'Faculty created successfully',
     success: true,
     data: result,
   });
@@ -20,4 +31,5 @@ const createStudent = catchAsync(async (req: Request, res: Response) => {
 
 export const UserController = {
   createStudent,
+  createFaculty,
 };

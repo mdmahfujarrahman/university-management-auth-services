@@ -9,8 +9,13 @@ const router = express.Router();
 
 router.post(
   '/create-student',
-  validateRequst(UserValidation.createUserZodSchema),
+  validateRequst(UserValidation.createStudentZodSchema),
   UserController.createStudent
+);
+router.post(
+  '/create-faculty',
+  validateRequst(UserValidation.createFacultyZodSchema),
+  UserController.createFaculty
 );
 
 export const UserRoutes = router;

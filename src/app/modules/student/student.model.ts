@@ -2,6 +2,8 @@ import { Schema, model } from 'mongoose';
 // types
 import { IStudent, StudentModel } from './student.interface';
 import { bloodGroup, gender } from '../../../constants/common';
+import ApiError from '../../../errors/ApiErrors';
+import httpStatus from 'http-status';
 
 export const StudentSchema = new Schema<IStudent, StudentModel>(
   {
@@ -65,5 +67,13 @@ export const StudentSchema = new Schema<IStudent, StudentModel>(
   },
   { timestamps: true, toJSON: { virtuals: true } }
 );
+
+StudentSchema.pre('save', async function (next) {
+  const isExist = await Student.findOne({ email: this.email });
+  if (isExist) {
+    throw new ApiError(httpStatus.CONFLICT, 'Faculty already exist');
+  }
+  next();
+});
 
 export const Student = model<IStudent, StudentModel>('Student', StudentSchema);
