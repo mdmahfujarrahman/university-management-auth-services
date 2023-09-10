@@ -1,155 +1,155 @@
 {
-    "keep": {
-        "days": true,
-        "amount": 14
+  "keep": {
+    "days": true,
+    "amount": 14
+  },
+  "auditLog": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\.dbb8c28f4ff0ba3f67e94711843df12fcec00f3c-audit.json",
+  "files": [
+    {
+      "date": 1693967248243,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-06-09-08-error.log",
+      "hash": "12f89b7d64c3cb5ef94cf2c03718b2c6c5497d286121cb5580017007a60cbcc7"
     },
-    "auditLog": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\.dbb8c28f4ff0ba3f67e94711843df12fcec00f3c-audit.json",
-    "files": [
-        {
-            "date": 1693967248243,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-06-09-08-error.log",
-            "hash": "12f89b7d64c3cb5ef94cf2c03718b2c6c5497d286121cb5580017007a60cbcc7"
-        },
-        {
-            "date": 1693969246642,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-06-09-09-error.log",
-            "hash": "da1045d2673cd1650097fb172e1b69b9c2a488b005c6940ef55986d33f7e3d36"
-        },
-        {
-            "date": 1693972952757,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-06-09-10-error.log",
-            "hash": "caefcdfd61e408251ec8861051ba72254e7b9b95207ca341096775e23b9205e9"
-        },
-        {
-            "date": 1693977111255,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-06-09-11-error.log",
-            "hash": "bd50b946b77a9101c100d1ccdf4ff7c46572ac219180b4b49cd015c24b0bb7b0"
-        },
-        {
-            "date": 1693980957429,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-06-09-12-error.log",
-            "hash": "28653d1397588a23dd0264aef7179239161d23335d45933b05f12b441fa5d9bb"
-        },
-        {
-            "date": 1693988142113,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-06-09-14-error.log",
-            "hash": "d2e223926689969df96e131bde8f5448af7385a285472203d1db563ce47ffa95"
-        },
-        {
-            "date": 1693991155140,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-06-09-15-error.log",
-            "hash": "1212341d4fd1117988c987bec181e745b0c0074f00ff0ce9aac0bc501dc7c2d7"
-        },
-        {
-            "date": 1694054281848,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-08-error.log",
-            "hash": "b77189675df52875bd095f5e870af19fd44c28595ec8307183bb3960937a8b9b"
-        },
-        {
-            "date": 1694055645768,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-09-error.log",
-            "hash": "83f718a2599f0b41c9f98267e35d36416e5a5eabaea390a72cb32c88bce05041"
-        },
-        {
-            "date": 1694059205815,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-10-error.log",
-            "hash": "cfa336c00743a4dc8bd7ac23e9599e730d35b0871c70693ef6e573df3a7a9a17"
-        },
-        {
-            "date": 1694062803438,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-11-error.log",
-            "hash": "5cd689e82e891ee7ec04842b21daeaa9e0f9a860f9676d57379735d778900494"
-        },
-        {
-            "date": 1694066775266,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-12-error.log",
-            "hash": "a32d3cbf8e341ee9b62deb1868a7fcfcd9b295b57c62dfd3933faffba995405d"
-        },
-        {
-            "date": 1694070030275,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-13-error.log",
-            "hash": "20867688e5553a086b0ab6bb5646f74d0428d9bf61c6661d9aedc1cd7d66182f"
-        },
-        {
-            "date": 1694073741992,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-14-error.log",
-            "hash": "40a4d0a5de1d60bc9bd88a2d956ac270e439c45e3afbb3b2a105dae4ee07b72e"
-        },
-        {
-            "date": 1694078107663,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-15-error.log",
-            "hash": "74d051cb70c7ae039f9792a4277cee4828515977107e08eddb0cf635815a5c68"
-        },
-        {
-            "date": 1694082184626,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-16-error.log",
-            "hash": "99ba07874419d5bf4f1eca677ba577cef37ea003d3300528fc622b6364665fb4"
-        },
-        {
-            "date": 1694084440160,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-17-error.log",
-            "hash": "0112bc91156f91ba8d4b28f8da45f340178be66b16d5058566c17391e1a3fe78"
-        },
-        {
-            "date": 1694227649964,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-08-error.log",
-            "hash": "b860dfdbe9c5b1435e9b36feeee13b181295f4c86f50cc40040440d4807a6b0a"
-        },
-        {
-            "date": 1694228535831,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-09-error.log",
-            "hash": "2210d710e16835468288979cd2ffd690cf051ae4ddbdd9f2f5df045ebfa6a78a"
-        },
-        {
-            "date": 1694234462822,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-10-error.log",
-            "hash": "6057dd263376a48e4dd4002ef66ba99234231877718bd45d2576be8277d3cc12"
-        },
-        {
-            "date": 1694235834249,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-11-error.log",
-            "hash": "82e7d74dbadd64c90bc4cb3f59f0acd9998c3156b9616fbb3ee8098f0a07bae2"
-        },
-        {
-            "date": 1694239206900,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-12-error.log",
-            "hash": "bf1a3ac538ac183f4fd3dee7483d416d8e903061c7a5637aa4ca37c86811d5df"
-        },
-        {
-            "date": 1694243098552,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-13-error.log",
-            "hash": "f3416fd8333118d3471e02bab7ff1bff4845c9336dd7cd425c7e9e50c00a2b84"
-        },
-        {
-            "date": 1694246759435,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-14-error.log",
-            "hash": "ff18438caf1970090cfc84516e0665a623d94044e86e86d1c877b896f01b316e"
-        },
-        {
-            "date": 1694250180853,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-15-error.log",
-            "hash": "67f1ab7e75e3142787a0c188bfeab1f31cf34b2fa115df3fe313d54af9a364fd"
-        },
-        {
-            "date": 1694273594696,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-21-error.log",
-            "hash": "f7268a3485938a5a60bd7b78c79dd41fb39d19df35b9418e629fa2789ee21423"
-        },
-        {
-            "date": 1694275532062,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-22-error.log",
-            "hash": "d9095c52b16dadb6e3cc52acfd43c85ed419b970194939d552b975ab744aa067"
-        },
-        {
-            "date": 1694279123194,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-23-error.log",
-            "hash": "bf64ea99edd47fb202113b834053da7beec7722714a46c4cd07fdaeaac681df9"
-        },
-        {
-            "date": 1694282786894,
-            "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-10-09-00-error.log",
-            "hash": "85a513c2936050d38b1e9436605dd50a5860b8ae752ce1e81d24c639e19e299a"
-        }
-    ],
-    "hashType": "sha256"
+    {
+      "date": 1693969246642,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-06-09-09-error.log",
+      "hash": "da1045d2673cd1650097fb172e1b69b9c2a488b005c6940ef55986d33f7e3d36"
+    },
+    {
+      "date": 1693972952757,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-06-09-10-error.log",
+      "hash": "caefcdfd61e408251ec8861051ba72254e7b9b95207ca341096775e23b9205e9"
+    },
+    {
+      "date": 1693977111255,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-06-09-11-error.log",
+      "hash": "bd50b946b77a9101c100d1ccdf4ff7c46572ac219180b4b49cd015c24b0bb7b0"
+    },
+    {
+      "date": 1693980957429,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-06-09-12-error.log",
+      "hash": "28653d1397588a23dd0264aef7179239161d23335d45933b05f12b441fa5d9bb"
+    },
+    {
+      "date": 1693988142113,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-06-09-14-error.log",
+      "hash": "d2e223926689969df96e131bde8f5448af7385a285472203d1db563ce47ffa95"
+    },
+    {
+      "date": 1693991155140,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-06-09-15-error.log",
+      "hash": "1212341d4fd1117988c987bec181e745b0c0074f00ff0ce9aac0bc501dc7c2d7"
+    },
+    {
+      "date": 1694054281848,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-08-error.log",
+      "hash": "b77189675df52875bd095f5e870af19fd44c28595ec8307183bb3960937a8b9b"
+    },
+    {
+      "date": 1694055645768,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-09-error.log",
+      "hash": "83f718a2599f0b41c9f98267e35d36416e5a5eabaea390a72cb32c88bce05041"
+    },
+    {
+      "date": 1694059205815,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-10-error.log",
+      "hash": "cfa336c00743a4dc8bd7ac23e9599e730d35b0871c70693ef6e573df3a7a9a17"
+    },
+    {
+      "date": 1694062803438,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-11-error.log",
+      "hash": "5cd689e82e891ee7ec04842b21daeaa9e0f9a860f9676d57379735d778900494"
+    },
+    {
+      "date": 1694066775266,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-12-error.log",
+      "hash": "a32d3cbf8e341ee9b62deb1868a7fcfcd9b295b57c62dfd3933faffba995405d"
+    },
+    {
+      "date": 1694070030275,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-13-error.log",
+      "hash": "20867688e5553a086b0ab6bb5646f74d0428d9bf61c6661d9aedc1cd7d66182f"
+    },
+    {
+      "date": 1694073741992,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-14-error.log",
+      "hash": "40a4d0a5de1d60bc9bd88a2d956ac270e439c45e3afbb3b2a105dae4ee07b72e"
+    },
+    {
+      "date": 1694078107663,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-15-error.log",
+      "hash": "74d051cb70c7ae039f9792a4277cee4828515977107e08eddb0cf635815a5c68"
+    },
+    {
+      "date": 1694082184626,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-16-error.log",
+      "hash": "99ba07874419d5bf4f1eca677ba577cef37ea003d3300528fc622b6364665fb4"
+    },
+    {
+      "date": 1694084440160,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-07-09-17-error.log",
+      "hash": "0112bc91156f91ba8d4b28f8da45f340178be66b16d5058566c17391e1a3fe78"
+    },
+    {
+      "date": 1694227649964,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-08-error.log",
+      "hash": "b860dfdbe9c5b1435e9b36feeee13b181295f4c86f50cc40040440d4807a6b0a"
+    },
+    {
+      "date": 1694228535831,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-09-error.log",
+      "hash": "2210d710e16835468288979cd2ffd690cf051ae4ddbdd9f2f5df045ebfa6a78a"
+    },
+    {
+      "date": 1694234462822,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-10-error.log",
+      "hash": "6057dd263376a48e4dd4002ef66ba99234231877718bd45d2576be8277d3cc12"
+    },
+    {
+      "date": 1694235834249,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-11-error.log",
+      "hash": "82e7d74dbadd64c90bc4cb3f59f0acd9998c3156b9616fbb3ee8098f0a07bae2"
+    },
+    {
+      "date": 1694239206900,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-12-error.log",
+      "hash": "bf1a3ac538ac183f4fd3dee7483d416d8e903061c7a5637aa4ca37c86811d5df"
+    },
+    {
+      "date": 1694243098552,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-13-error.log",
+      "hash": "f3416fd8333118d3471e02bab7ff1bff4845c9336dd7cd425c7e9e50c00a2b84"
+    },
+    {
+      "date": 1694246759435,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-14-error.log",
+      "hash": "ff18438caf1970090cfc84516e0665a623d94044e86e86d1c877b896f01b316e"
+    },
+    {
+      "date": 1694250180853,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-15-error.log",
+      "hash": "67f1ab7e75e3142787a0c188bfeab1f31cf34b2fa115df3fe313d54af9a364fd"
+    },
+    {
+      "date": 1694273594696,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-21-error.log",
+      "hash": "f7268a3485938a5a60bd7b78c79dd41fb39d19df35b9418e629fa2789ee21423"
+    },
+    {
+      "date": 1694275532062,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-22-error.log",
+      "hash": "d9095c52b16dadb6e3cc52acfd43c85ed419b970194939d552b975ab744aa067"
+    },
+    {
+      "date": 1694279123194,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-09-09-23-error.log",
+      "hash": "bf64ea99edd47fb202113b834053da7beec7722714a46c4cd07fdaeaac681df9"
+    },
+    {
+      "date": 1694282786894,
+      "name": "D:\\Education\\Next Level\\univercity-managment\\logs\\winston\\errors\\um-2023-10-09-00-error.log",
+      "hash": "85a513c2936050d38b1e9436605dd50a5860b8ae752ce1e81d24c639e19e299a"
+    }
+  ],
+  "hashType": "sha256"
 }
