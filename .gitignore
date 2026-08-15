@@ -1,3 +1,7 @@
 node_modules
 .env
 .vercel
+
+# build output and runtime logs are generated, not committed
+dist
+logs

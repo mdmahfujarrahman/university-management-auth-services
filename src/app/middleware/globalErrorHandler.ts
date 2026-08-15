@@ -58,10 +58,10 @@ const globalErrorHandler: ErrorRequestHandler = (
   }
 
   res.status(statusCode).json({
-    sucess: false,
+    success: false,
     message,
     errorMessages,
-    stcak: config.env !== 'production' ? error?.stack : undefined,
+    stack: config.env !== 'production' ? error?.stack : undefined,
   });
 };
 
